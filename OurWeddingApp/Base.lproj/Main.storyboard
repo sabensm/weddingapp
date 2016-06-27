@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OurWeddingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,94 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boyden-background" translatesAutoresizingMaskIntoConstraints="NO" id="iF2-cY-7dg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOi-v0-SMu">
+                                <rect key="frame" x="106" y="73" width="57" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="DDi-kV-tCQ"/>
+                                    <constraint firstAttribute="width" constant="57" id="hRZ-eG-i9O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="26"/>
+                                <color key="textColor" red="0.83137254901960789" green="0.24313725490196078" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kq-Fe-XbV">
+                                <rect key="frame" x="383" y="73" width="66" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="LsD-ny-pg3"/>
+                                    <constraint firstAttribute="height" constant="36" id="UNC-xV-r4v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="26"/>
+                                <color key="textColor" red="0.043137254901960784" green="0.12941176470588237" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mv-VJ-qpl">
+                                <rect key="frame" x="198" y="111" width="205" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="LWj-nQ-vsZ"/>
+                                    <constraint firstAttribute="height" constant="213" id="ZXd-dq-b9r"/>
+                                </constraints>
+                                <state key="normal" image="hearts-connector"/>
+                                <connections>
+                                    <action selector="heartsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wq-DG-mVN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Until We're Married!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0N-xs-LxU">
+                                <rect key="frame" x="128" y="455" width="359" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="jul-gs-Mc6"/>
+                                    <constraint firstAttribute="width" constant="359" id="qtT-p5-b48"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="45"/>
+                                <color key="textColor" red="0.043137254899999998" green="0.12941176469999999" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnl-b1-mgw">
+                                <rect key="frame" x="94" y="383" width="429" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="429" id="DEl-o7-y67"/>
+                                    <constraint firstAttribute="height" constant="84" id="ckH-R5-X2c"/>
+                                </constraints>
+                                <string key="text">1 Month, 100 Days, 23 Hours
+59 Minutes, 59 Seconds</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.24313725489999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xnl-b1-mgw" firstAttribute="top" secondItem="2mv-VJ-qpl" secondAttribute="bottom" constant="59" id="1YN-jQ-XxU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iF2-cY-7dg" secondAttribute="bottom" id="JMQ-Ff-awN"/>
+                            <constraint firstItem="q0N-xs-LxU" firstAttribute="top" secondItem="2mv-VJ-qpl" secondAttribute="bottom" constant="131" id="PIc-th-xno"/>
+                            <constraint firstItem="dOi-v0-SMu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="86" id="Pek-gJ-2U9"/>
+                            <constraint firstItem="iF2-cY-7dg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QO6-pO-ePG"/>
+                            <constraint firstItem="dOi-v0-SMu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="S9W-hc-d0o"/>
+                            <constraint firstItem="8Kq-Fe-XbV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="aLH-wX-7bg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Kq-Fe-XbV" secondAttribute="trailing" constant="90" id="bhx-Kj-cGX"/>
+                            <constraint firstItem="2mv-VJ-qpl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bzr-Ag-9XC"/>
+                            <constraint firstItem="iF2-cY-7dg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dch-Cw-aGu"/>
+                            <constraint firstItem="q0N-xs-LxU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hHV-aP-e85"/>
+                            <constraint firstAttribute="trailing" secondItem="iF2-cY-7dg" secondAttribute="trailing" id="khQ-sV-7Bv"/>
+                            <constraint firstItem="2mv-VJ-qpl" firstAttribute="top" secondItem="8Kq-Fe-XbV" secondAttribute="bottom" constant="5" id="sTT-yJ-60H"/>
+                            <constraint firstItem="Xnl-b1-mgw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tmE-tF-G7h"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="Xnl-b1-mgw" id="VwL-Cw-mhP"/>
+                        <outlet property="staticText" destination="q0N-xs-LxU" id="NBI-yy-41y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="720" y="618"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="boyden-background" width="891" height="1584"/>
+        <image name="hearts-connector" width="151" height="213"/>
+    </resources>
 </document>
